@@ -10,3 +10,29 @@ def test_estiliza_mensaje():
 
 test_estiliza_mensaje()
 print("Todas las pruebas pasaron correctamente.")
+
+from cadenas import invierte_texto
+
+def test_invierte_texto():
+    print('Probando invierte texto...')
+    assert invierte_texto("Texto de prueba") == "abeurp ed otxeT"
+    assert invierte_texto('seres') == 'seres'
+
+
+#test_invierte_texto()
+#print("Todas las pruebas pasaron correctamente.")
+
+from cadenas import es_palindromo
+
+def test_es_palindromo():
+    print('Probando es palindromo:')
+    assert es_palindromo('reconocer')
+    assert es_palindromo('rotor')
+    assert es_palindromo('radar')
+    assert es_palindromo('Amor a Roma',True,True)
+    assert es_palindromo('Luz azul',True,True)
+
+#test_es_palindromo()
+#print('Todas las pruebas pasaron correctamente.')
+
+
