@@ -8,8 +8,8 @@ def test_estiliza_mensaje():
     assert estiliza_mensaje("Hola Mundo", alterna_may_min=False, usa_dieresis=True, sustituye_espacios="-") == "Hölä-Mündö"
     assert estiliza_mensaje("Hola Mundo", alterna_may_min=True, usa_dieresis=False, sustituye_espacios="_") == "HoLa_MuNdO"
 
-test_estiliza_mensaje()
-print("Todas las pruebas pasaron correctamente.")
+#test_estiliza_mensaje()
+#print("Todas las pruebas pasaron correctamente.")
 
 from cadenas import invierte_texto
 
@@ -19,8 +19,8 @@ def test_invierte_texto():
     assert invierte_texto('seres') == 'seres'
 
 
-#test_invierte_texto()
-#print("Todas las pruebas pasaron correctamente.")
+test_invierte_texto()
+print("Todas las pruebas pasaron correctamente.")
 
 from cadenas import es_palindromo
 
